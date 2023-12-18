@@ -105,14 +105,12 @@ body {
   transform: scale(0.9) translateX(77%) translateY(100%) rotateZ(80deg);
 }
 .container .img-container {
-  -webkit-animation: float 4s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate;
-          animation: float 4s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate;
+  animation: float 4s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate;
   position: absolute;
   top: 0;
   right: 0;
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .container .img-container img {
   transform-origin: top right;
@@ -121,15 +119,6 @@ body {
   transform: translateX(42%) rotateZ(13deg) skewX(3deg);
   pointer-events: none;
   width: 100%;
-}
-
-@-webkit-keyframes float {
-  0% {
-    transform: translateZ(20px);
-  }
-  100% {
-    transform: translateY(-21px) translateX(-13px) translateZ(30px);
-  }
 }
 
 @keyframes float {
